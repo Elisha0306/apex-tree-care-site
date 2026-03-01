@@ -126,7 +126,7 @@ nav a.active {
   min-height: 50vh;
   background:
     linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-    url("../images/images/snowy-tree-optimized.jpg") center/cover no-repeat;
+    url("../images/snowy-tree-optimized.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,7 +139,7 @@ nav a.active {
   min-height: 100vh;
   background:
     linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
-    url("../images/images/snowy-tree-optimized.jpg") center/cover no-repeat;
+    url("../images/snowy-tree-optimized.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,7 +231,7 @@ padding: 20px 0;
 
 /*BACKGROUND SECTION*/
 .contact-hero {
-  background: url("../images/images/snowy-tree-optimized.jpg") no-repeat center/cover;
+  background: url("../images/snowy-tree-optimized.jpg") no-repeat center/cover;
   position: relative;
   padding: 100px 20px;
   flex: 1;
@@ -467,4 +467,5 @@ nav.active {
   line-height: 1.4;
   margin-bottom: 8px;
  }
+
 }
