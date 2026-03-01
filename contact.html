@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Tree Care</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="contact-page">
+
+<header>
+  <div class="header-container">
+    <div class="logo">Apex Tree Care</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </div>
+
+  <nav id="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="snow-removal.html">Snow Removal</a>
+    <a href="tree-removal.html">Tree Removal</a>
+  </nav>
+</header>
+
+<main>
+<section class="contact-hero">
+
+  <div class="contact-wrapper">
+    <h1>Contact Us</h1>
+
+
+    <form class="modern-form">
+
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+
+
+      <button type="submit" class="btn">Submit</button>
+
+    </form>
+   </div>
+  </section> 
+</main>
+
+<footer>
+  <p>© 2026 Apex Tree Care</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = document.getElementById("menu-toggle");
+  var nav = document.getElementById("nav-menu");
+
+  toggle.addEventListener("click", function () {
+    nav.classList.toggle("active");
+  });
+});
+</script>
+
+</body>
+</html>

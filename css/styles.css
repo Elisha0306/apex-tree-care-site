@@ -1,0 +1,470 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+
+header {
+  background: #111;
+  color: white;
+  position: relative;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a.active {
+  border-bottom: 2px solid #4caf50;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-link {
+  color: #4caf50;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
+/*SERVICES GRID*/
+
+.page-section {
+  padding: 60px 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.services-card {
+  background: white;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.capabilities-list {
+  background: transparent;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+/* NAV (Mobile First) */
+
+#nav-menu {
+  display: none;
+  flex-direction: column;
+  background: #111;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 0;
+  display: block;
+}
+
+#nav-menu.active {
+  display: flex;
+}
+
+/* HERO */
+
+.hero-small {
+  min-height: 50vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("../images/images/snowy-tree-optimized.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 50px 20px;
+}
+
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+    url("../images/images/snowy-tree-optimized.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-content li {
+  font-size: 2rem;
+  line-height: 1.75;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.hero-content h2 {
+  font-size: 32px;
+}
+
+.hero-content ul {
+  list-style: square;
+  padding: 0;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #3e5f3e;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card {
+  background: rgba(0,0,0,0.75);
+  padding: 40px;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 500px;
+  color: white;
+  z-index: 2;
+}
+
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page main {
+  flex: 1;
+}
+
+.contact-page footer {
+  margin-top: auto;
+}
+
+
+footer {
+margin-top: auto;
+background: #111;
+color: white;
+text-align: center;
+padding: 20px 0;
+}
+
+/*BACKGROUND SECTION*/
+.contact-hero {
+  background: url("../images/images/snowy-tree-optimized.jpg") no-repeat center/cover;
+  position: relative;
+  padding: 100px 20px;
+  flex: 1;
+}
+
+/*LIGHT OVERLAY*/
+
+.contact-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+
+  backdrop-filter: blur(3px);
+  --webkit-backdrop-filter: blur(3px);
+}
+
+/* HEADING */
+.contact-wrapper h1 {
+  text-align: center;
+  font-size: 48px;
+  color: #4b7f5c;  /* MUTED GREEN */
+  margin-bottom: 40px;
+}
+
+/* FORM */
+.modern-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.modern-form label {
+  font-weight: bold;
+  color: #4b7f5c;
+  font-size: 24px;
+}
+
+.modern-form input,
+.modern-form textarea {
+  background: rgba(255,255,255,0.9);
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.modern-form input:focus,
+.modern-form textarea:focus {
+  border-bottom: 2px solid #4b7f5c;
+}
+
+.modern-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* BUTTON */
+.modern-form button {
+  background: #4b7f5c;
+  color: white;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.modern-form button:hover {
+  background: #3a6549;
+}
+
+/* FOOTER */
+.site-footer {
+  background: #2c3e6b;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+}
+
+
+  /* REVIEWS SECTION */
+.reviews-section {
+    padding: 80px 20px;
+    background: #f5f5f5;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.review-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-card p {
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.review-card h4 {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.stars {
+    color: #f4b400;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Right side group */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Contact button */
+.contact-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* Nav hidden by default */
+nav {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* HEADER LAYOUT */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Right Side Group */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Contact Button */
+.contact-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hamburger ALWAYS visible */
+.menu-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Nav Hidden By Default */
+nav {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+/* When Active */
+nav.active {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+
+ .hero-content ul {
+  padding-left: 20px;
+  text-align: left;
+ }
+
+ .hero-content li {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 8px;
+ }
+}
